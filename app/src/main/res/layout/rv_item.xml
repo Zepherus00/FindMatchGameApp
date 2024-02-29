@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/bg_item"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:minWidth="8dp"
+        android:minHeight="8dp"
+        android:src="@drawable/bg_item" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_item"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:minWidth="8dp"
+        android:minHeight="8dp"
+        android:visibility="gone"
+        tools:src="@drawable/ic_lamp" />
+</LinearLayout>
