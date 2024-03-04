@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/menuFragment"
-        android:name="com.example.testgameapp.MenuFragment"
+        android:name="com.example.testgameapp.presentation.MenuFragment"
         android:label="fragment_menu"
         tools:layout="@layout/fragment_menu" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/gameSceneFragment"
-        android:name="com.example.testgameapp.GameSceneFragment"
+        android:name="com.example.testgameapp.presentation.GameSceneFragment"
         android:label="fragment_game_scene"
         tools:layout="@layout/fragment_game_scene" >
         <action
@@ -28,7 +28,7 @@
     </fragment>
     <fragment
         android:id="@+id/endGamePopupFragment"
-        android:name="com.example.testgameapp.EndGamePopupFragment"
+        android:name="com.example.testgameapp.presentation.EndGamePopupFragment"
         android:label="fragment_end_game_popup"
         tools:layout="@layout/fragment_end_game_popup" >
         <action

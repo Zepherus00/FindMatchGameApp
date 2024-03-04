@@ -1,84 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".EndGamePopupFragment">
+    style="@style/match_parent"
+    android:orientation="vertical"
+    tools:context=".presentation.EndGamePopupFragment">
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/ic_trophy"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="120dp"
-        android:src="@drawable/ic_trophy"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/img_trophy_end_game"
+        style="@style/img_trophy_end_game"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_trophy" />
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/txt_title"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="24dp"
-        android:layout_marginTop="24dp"
-        android:gravity="center"
-        android:text="@string/text_congratulation"
-        android:textColor="@color/black"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ic_trophy" />
+        android:id="@+id/title_end_game"
+        style="@style/title_end_game"
+        android:text="@string/text_congratulation" />
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/txt_subtitle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="24dp"
-        android:layout_marginTop="24dp"
-        android:gravity="center"
-        android:text="@string/text_sub_great_you_won"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/txt_title" />
+        android:id="@+id/subtitle_end_game"
+        style="@style/subtitle_end_game"
+        android:text="@string/text_sub_great_you_won" />
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/txt_prize"
-        style="@style/moneyCounterMenuStyle"
-        android:layout_marginTop="48dp"
+        android:id="@+id/money_counter_end_game"
+        style="@style/money_counter_style"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="0dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/txt_subtitle"
         tools:text="100" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_double_reward"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="24dp"
-        android:background="@drawable/bg_btn"
-        android:paddingHorizontal="24dp"
-        android:text="@string/btn_double_reward"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@id/btn_home"
-        app:layout_constraintEnd_toStartOf="@id/btn_home"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/btn_home" />
-
-    <androidx.appcompat.widget.AppCompatImageButton
-        android:id="@+id/btn_home"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:layout_marginTop="56dp"
-        android:layout_marginEnd="24dp"
-        android:background="@drawable/bg_btn_privacy"
-        android:src="@drawable/ic_home"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/txt_prize" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:id="@+id/btn_home_end_game"
+        style="@style/btn_home_end_game"
+        android:layout_marginTop="24dp"
+        android:text="@string/btn_home_end_game" />
+</androidx.appcompat.widget.LinearLayoutCompat>

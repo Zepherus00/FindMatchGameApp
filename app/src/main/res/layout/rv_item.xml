@@ -6,25 +6,12 @@
     android:orientation="horizontal">
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/bg_item"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="12dp"
-        android:layout_weight="1"
-        android:adjustViewBounds="true"
-        android:minWidth="8dp"
-        android:minHeight="8dp"
+        android:id="@+id/bg_rv_item"
+        style="@style/bg_rv_item"
         android:src="@drawable/bg_item" />
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/img_item"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="12dp"
-        android:layout_weight="1"
-        android:adjustViewBounds="true"
-        android:minWidth="8dp"
-        android:minHeight="8dp"
-        android:visibility="gone"
+        android:id="@+id/img_rv_item"
+        style="@style/img_rv_item"
         tools:src="@drawable/ic_lamp" />
 </LinearLayout>

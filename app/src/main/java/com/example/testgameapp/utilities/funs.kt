@@ -1,4 +1,4 @@
-package com.example.testgameapp
+package com.example.testgameapp.utilities
 
 import android.widget.Toast
 
