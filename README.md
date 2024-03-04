@@ -2,7 +2,7 @@
 Игра по поиску совпадающих картинок, чем быстрее найдёте все совпадающие элементы, тем больше монет получите.
 
 ## Технологии
-Применён архитектурный паттерн Clean Architecture, применён паттерн MVVM, используются библиотеки Koin, Coroutines, RecyclerView, Navigation, ViewPager2, Koin, Navigation. Код написан на языке Kotlin. Для написания тестов использовались библиотеки JUnit и mockito.
+Применён архитектурный паттерн Clean Architecture, применён паттерн MVVM, используются библиотеки Koin, Coroutines, RecyclerView, Navigation, ViewPager2, Navigation. Код написан на языке Kotlin. Для написания тестов использовались библиотеки JUnit и mockito.
 
 ## Запуск приложения
 С помощью Android Studio установить проект на виртуальное или реальное устройство.
